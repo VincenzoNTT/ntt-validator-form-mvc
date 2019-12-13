@@ -36,6 +36,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  *   <li>INSUFFICIENT_SPECIAL=Password must contain at least %1$s special characters.</li>
  *   <li>TOO_LONG=Password must be no more than %2$s characters in length.</li>
  *   <li>TOO_SHORT=Password must be at least %1$s characters in length.</li>
+ *   <li>ILLEGAL_WORD=Password contains the dictionary word '%1$s'.</li>
  * </ul>
  * 
  * @author nttdata
