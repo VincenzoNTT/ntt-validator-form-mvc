@@ -1,6 +1,7 @@
 # ntt-validator-form-mvc
 
-@Annotation Custom Constraints\Validators
+@Annotation Custom Constraints\Validators.
+
 Il progetto ha come obiettivo quello di generalizzare e\o incapsulare all'interno di unico artifact custom le regole che governano le più comuni operazioni
 di verifica dei campi lato client.
 
@@ -9,15 +10,16 @@ di verifica dei campi lato client.
 @FieldMatch: This is a class-level annotation where we can compare two fields for equality an pass in an optional message to display to the user if the 
 constraint validation fails.
 
+
 @ValidPassword: This annotation check valid password. The annotated element must be true :
- * <ul>
- *   <li>{@code CharSequence} (least 8 characters)</li>
- *   <li>{@code CharSequence} (at least one upper-case character)</li>
- *   <li>{@code CharSequence} (at least one lower-case character)</li>
- *   <li>{@code CharSequence} (at least one digit character)</li>
- *   <li>{@code CharSequence} (at least one symbol (special character))</li>
- *   <li>{@code CharSequence} (no whitespace)</li>
- * </ul>
+ 
+ * **{@code CharSequence} (least 8 characters)**
+ * **{@code CharSequence} (at least one upper-case character)**
+ * **{@code CharSequence} (at least one lower-case character)**
+ * **{@code CharSequence} (at least one digit character)**
+ * **{@code CharSequence} (at least one symbol (special character))**
+ * **{@code CharSequence} (no whitespace)**
+ 
  
 @Phone: The annotated element phone number digit.
  
@@ -31,7 +33,7 @@ constraint validation fails.
 MyClassDto{}
 
 @ValidPassword
-private String password;
+*private String password;
 
 @Phone
-private String phone;
+*private String phone;
