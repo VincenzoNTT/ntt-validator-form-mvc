@@ -26,14 +26,14 @@ constraint validation fails.
 
 ## Startup\Use it:
 
-@FieldMatch.List({
-        @FieldMatch(baseField = "password", matchField = "confirmPassword", message = "The password fields must match"),
-        @FieldMatch(baseField = "email", matchField = "confirmEmail", message = "The email fields must match")
-})
+@FieldMatch.List({  
+        @FieldMatch(baseField = "password", matchField = "confirmPassword", message = "The password fields must match"),  
+        @FieldMatch(baseField = "email", matchField = "confirmEmail", message = "The email fields must match")  
+})  
 MyClassDto{}
 
-@ValidPassword
-*private String password;
+@ValidPassword  
+private String password;
 
-@Phone
-*private String phone;
+@Phone  
+private String phone;
